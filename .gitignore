@@ -1,0 +1,103 @@
+# #################### #
+# ## Arquivos de OS ## #
+# #################### #
+
+# Arquivos do macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Thumbnails do Windows
+Thumbs.db
+ehthumbs.db
+ehthumbs_vista.db
+
+# Lixo do sistema
+*~
+.Spotlight-V100
+.Trashes
+
+# ####################### #
+# ## Pastas de Build e ## #
+# ## Dependências      ## #
+# ####################### #
+
+# Dependências
+/node_modules
+/bower_components
+/vendor # Para PHP (Composer)
+/venv   # Para Python
+/env    # Para Python
+
+# Builds e pacotes
+/build
+/dist
+/out
+/target # Para Java (Maven/Gradle)
+/bin
+
+# ################# #
+# ## Arquivos de ## #
+# ##   LOGs      ## #
+# ################# #
+
+*.log
+logs
+*.log.*
+
+# ##################### #
+# ## Arquivos de IDE ## #
+# ## e Editores      ## #
+# ##################### #
+
+# VS Code
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.history
+
+# JetBrains (IntelliJ, PyCharm, WebStorm, etc.)
+.idea/
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Eclipse
+.project
+.classpath
+.settings/
+
+# ###################### #
+# ## Arquivos Sensíveis # #
+# ## e de Ambiente    ## #
+# ###################### #
+
+# Arquivos de ambiente - NUNCA versione suas senhas e chaves de API!
+.env
+.env.local
+.env.*.local
+*.env
+
+# Exceção para arquivos de exemplo (boa prática)
+!*.env.example
+!*.env.sample
+
+# ################# #
+# ## Diversos    ## #
+# ################# #
+
+# Arquivos de dependências do Python
+*.pyc
+__pycache__/
+.pytest_cache/
+
+# Arquivos de banco de dados local
+*.sqlite3
+*.db
+
+# Arquivos de upload/mídia gerados pelo usuário
+/media
+/uploads
