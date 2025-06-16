@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cardápio Digital</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <header class="header">
+        <h1>Nosso Cardápio</h1>
+    </header>
+
+    <main class="menu-container">
+        <section class="menu-section" id="pratos-principais">
+            <h2>Pratos Principais</h2>
+            <div class="menu-grid">
+                <!-- Os itens do menu serão inseridos via JavaScript -->
+            </div>
+        </section>
+    </main>
+
+    <nav class="floating-menu">
+        <button class="menu-button" id="menu-toggle">
+            <span class="hamburger-icon"></span>
+        </button>
+        <button class="cart-button" id="cart-toggle">
+            <span class="cart-icon">🛒</span>
+            <span class="cart-count">0</span>
+        </button>
+    </nav>
+
+    <div class="cart-overlay" id="cart-overlay"></div>
+    <div class="cart-popup" id="cart-popup">
+        <div class="cart-header">
+            <h2>Seu Pedido</h2>
+            <button class="close-cart">×</button>
+        </div>
+        <div class="cart-items">
+            <!-- Os itens do carrinho serão inseridos via JavaScript -->
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Total:</span>
+                <span class="total-value">R$ 0,00</span>
+            </div>
+            <button class="checkout-button">Finalizar Pedido</button>
+        </div>
+    </div>
+
+    <div class="menu-overlay" id="menu-overlay">
+        <div class="menu-content">
+            <div class="menu-header">
+                <h2>Categorias</h2>
+                <button class="close-menu" aria-label="Fechar menu">×</button>
+            </div>
+            <nav class="category-nav">
+                <button class="category-button active" data-category="pratos-principais">
+                    <span>Pratos Principais</span>
+                </button>
+                <button class="category-button" data-category="sobremesas">
+                    <span>Sobremesas</span>
+                </button>
+                <button class="category-button" data-category="bebidas">
+                    <span>Bebidas</span>
+                </button>
+            </nav>
+        </div>
+    </div>
+
+    <script type="module" src="js/main.js"></script>
+</body>
+</html> 
